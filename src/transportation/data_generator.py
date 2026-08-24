@@ -17,3 +17,6 @@ df = pd.DataFrame(data)
 
 print("\nTransportation Data:")
 print(df)
+df.to_csv("data/raw/transportation_data.csv", index=False)
+
+print("\nDataset saved successfully!")
