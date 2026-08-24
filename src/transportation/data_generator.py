@@ -1,5 +1,4 @@
-print("================================")
-print("        CAMPUS X")
-print("================================")
-print("Transportation AI Module")
-print("Data Generator Started")
+import pandas as pd
+
+print("Campus X Transportation AI")
+print("Pandas loaded successfully!")
