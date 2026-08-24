@@ -1,0 +1,6 @@
+bus_id,route,passengers,speed_kmph,traffic,weather,delay_minutes
+B01,R01,35,32,Low,Clear,0
+B02,R02,42,25,Medium,Clear,3
+B03,R03,18,40,Low,Rain,1
+B04,R01,50,18,High,Rain,8
+B05,R02,27,35,Medium,Cloudy,4
