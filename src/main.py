@@ -1,0 +1,7 @@
+print("================================")
+print("          CAMPUS X")
+print("================================")
+print("AI-Powered Smart Campus")
+print("Digital Twin System")
+print()
+print("Project initialization successful!")
