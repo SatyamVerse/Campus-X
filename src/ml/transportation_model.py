@@ -24,5 +24,21 @@ df["weather"] = df["weather"].map({
 
 print("\nProcessed dataset:")
 print(df)
-print("\nProcessed dataset:")
-print(df)
+# Features used by the ML model
+X = df[
+    [
+        "passengers",
+        "speed_kmph",
+        "traffic",
+        "weather"
+    ]
+]
+
+# Target that the model will predict
+y = df["delay_minutes"]
+
+print("\nFeatures:")
+print(X)
+
+print("\nTarget:")
+print(y)
