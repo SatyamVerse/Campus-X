@@ -63,3 +63,20 @@ model = RandomForestRegressor(
 model.fit(X_train, y_train)
 
 print("\nCampus X ML model trained successfully!")
+# New bus situation
+new_bus = pd.DataFrame({
+    "passengers": [40],
+    "speed_kmph": [20],
+    "traffic": [2],   # High traffic
+    "weather": [2]    # Rain
+})
+
+# Predict delay
+predicted_delay = model.predict(new_bus)
+
+print("\nNew bus situation:")
+print(new_bus)
+
+print(
+    f"\nPredicted delay: {predicted_delay[0]:.2f} minutes"
+)
