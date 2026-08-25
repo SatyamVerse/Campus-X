@@ -24,3 +24,5 @@ df["weather"] = df["weather"].map({
 
 print("\nProcessed dataset:")
 print(df)
+print("\nProcessed dataset:")
+print(df)
