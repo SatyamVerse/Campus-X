@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
+
 print("Campus X ML Module")
 print("Loading transportation dataset...")
 
@@ -25,6 +26,7 @@ df["weather"] = df["weather"].map({
 
 print("\nProcessed dataset:")
 print(df)
+
 # Features used by the ML model
 X = df[
     [
@@ -43,6 +45,7 @@ print(X)
 
 print("\nTarget:")
 print(y)
+
 # Split data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(
     X,
@@ -53,6 +56,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 print("\nTraining samples:", len(X_train))
 print("Testing samples:", len(X_test))
+
 # Create the ML model
 model = RandomForestRegressor(
     n_estimators=100,
@@ -63,6 +67,7 @@ model = RandomForestRegressor(
 model.fit(X_train, y_train)
 
 print("\nCampus X ML model trained successfully!")
+
 # New bus situation
 new_bus = pd.DataFrame({
     "passengers": [40],
