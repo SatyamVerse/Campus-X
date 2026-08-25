@@ -53,3 +53,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 print("\nTraining samples:", len(X_train))
 print("Testing samples:", len(X_test))
+# Create the ML model
+model = RandomForestRegressor(
+    n_estimators=100,
+    random_state=42
+)
+
+# Train the model
+model.fit(X_train, y_train)
+
+print("\nCampus X ML model trained successfully!")
