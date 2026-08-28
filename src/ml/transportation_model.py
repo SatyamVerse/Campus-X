@@ -55,7 +55,7 @@ print("\nProcessed dataset:")
 print(df)
 
 # ========================================
-# 3. SELECT FEATURES
+# 3. SELECT FEATURES of Entities
 # ========================================
 
 X = df[
