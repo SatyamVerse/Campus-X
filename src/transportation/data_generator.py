@@ -15,7 +15,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-print("\nTransportation Data:")
+print("\nThe Transportation Data:")
 print(df)
 df.to_csv("data/raw/transportation_data.csv", index=False)
 
