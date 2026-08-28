@@ -83,7 +83,7 @@ print("\nTarget:")
 print(y)
 
 # ========================================
-# 5. TRAIN / TEST SPLIT
+# 5. TRAIN / TEST SPLIT The Data
 # ========================================
 
 X_train, X_test, y_train, y_test = train_test_split(
